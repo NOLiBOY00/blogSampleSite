@@ -1,0 +1,19 @@
+{% extends "blogs/base.html" %}
+
+{% block page_header %}
+    <h3>Titles</h3>
+{% endblock page_header %}
+
+{% block content %}
+
+    <ul>
+        {% for post in posts %}
+            <div class="card mb-1">
+                <a class="" href="{% url 'blogs:view_post' post.id %}">{{ post.title }}</a>
+            </div>
+        {% empty %}
+            <p>No blog post for title have been added yet. Please add new post.</p>
+        {% endfor %}
+    </ul>
+
+{% endblock content %}

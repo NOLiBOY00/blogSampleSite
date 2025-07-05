@@ -1,0 +1,15 @@
+#logout-form {
+    display: inline;
+}
+
+#logout-button {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    /*
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    */
+}

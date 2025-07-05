@@ -1,0 +1,19 @@
+{% extends "blogs/base.html" %}
+
+{% block page_header %}
+    <h2>View Post</h2>
+{% endblock page_header %}
+
+{% block content %}
+
+    <div class="card mb-3">
+        <h4 class="card-header">
+            {{ title }} <br>
+            {{ date_|date:'M d, Y H:i' }}
+        </h4>
+        <div class="card-body">
+            {{ text|linebreaks }}
+        </div>
+    </div>
+
+{% endblock content %}
